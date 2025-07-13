@@ -42,7 +42,7 @@ const Header = () => {
         <nav className="hidden lg:flex gap-4 px-6 py-2 flex-wrap justify-center">
           <Link href="/" className="text-black px-5 font-bold text-lg hover:text-yellow-700 hover:scale-105 transition-all">الرئيسية</Link>
           <Link href="/about" className="text-black px-5 font-bold text-lg hover:text-yellow-700 hover:scale-105 transition-all">معلومات عنا</Link>
-          <Link href="/parents" className="text-black px-5 font-bold text-lg hover:text-yellow-700 hover:scale-105 transition-all">التحكم الأبوي</Link>
+          <Link href="/" className="text-black px-5 font-bold text-lg hover:text-yellow-700 hover:scale-105 transition-all">للاباء والامهات </Link>
           <Link href="/features" className="text-black px-5 font-bold text-lg hover:text-yellow-700 hover:scale-105 transition-all">ميزات</Link>
           <Link href="/contact" className="text-black px-5 font-bold text-lg hover:text-yellow-700 hover:scale-105 transition-all">اتصل بنا</Link>
         </nav>
@@ -63,7 +63,7 @@ const Header = () => {
           <nav className="flex flex-col gap-3">
             <Link href="/" className="text-black font-bold text-lg hover:text-yellow-700">الرئيسية</Link>
             <Link href="/about" className="text-black font-bold text-lg hover:text-yellow-700">معلومات عنا</Link>
-            <Link href="/parents" className="text-black font-bold text-lg hover:text-yellow-700">التحكم الأبوي</Link>
+            <Link href="/" className="text-black font-bold text-lg hover:text-yellow-700"> للاباء والامهات</Link>
             <Link href="/features" className="text-black font-bold text-lg hover:text-yellow-700">ميزات</Link>
             <Link href="/contact" className="text-black font-bold text-lg hover:text-yellow-700">اتصل بنا</Link>
           </nav>

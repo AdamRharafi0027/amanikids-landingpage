@@ -91,12 +91,12 @@ const Footer = () => {
               </button>
             </form>
           </div>
-        </div>
-
         {/* Copyright */}
         <div className="text-center mt-5 text-sm text-gray-600">
           © {new Date().getFullYear()} أماني كيدز - جميع الحقوق محفوظة
         </div>
+        </div>
+
     </>
   )
 }

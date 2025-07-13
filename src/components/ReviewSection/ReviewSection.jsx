@@ -40,7 +40,7 @@ const ReviewSection = () => {
     setIndex((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
 
   return (
-    <section id="review" className="bg-white py-20 px-6 text-center">
+    <section id="review" className="mt-20 bg-white py-20 px-6 text-center">
       <h2 className="text-3xl sm:text-4xl font-bold text-yellow-700 mb-8">
         آراء الآباء
       </h2>

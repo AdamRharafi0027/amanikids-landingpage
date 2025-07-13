@@ -7,10 +7,7 @@ import Slider from "react-slick";
 import { CheckCircle } from "lucide-react";
 
 // استيراد الصور
-import bird1 from "../../../public/assets/images/bird1.png";
-import bird2 from "../../../public/assets/images/bird2-r.png";
-import cloud from "../../../public/assets/images/cloud-r.png";
-import tree from "../../../public/assets/images/tree-r.png";
+
 import videoPreview from "../../../public/assets/images/video-placeholder.jpg";
 import feature1 from "../../../public/assets/images/feature-parent-control.png";
 import feature2 from "../../../public/assets/images/feature-activities.png";
@@ -19,8 +16,7 @@ import aboutImage from "../../../public/assets/images/about-video-preview.png";
 import kidsVideo1 from "../../../public/assets/images/kidsVideo1.png";
 import kidsVideo2 from "../../../public/assets/images/kidsVideo2.png";
 import kidsVideo3 from "../../../public/assets/images/kidsVideo3.png";
-import kidsStudying from "../../../public/assets/images/kids-studying.png";
-
+import kids_hapy from "../../../public/assets/images/kids_hapy.jpg";
 
 const Home = () => {
   const settings = {
@@ -62,42 +58,11 @@ const Home = () => {
   return (
     <>
       {/* Home SECTION */}
-      <section id="hero" className="bg-blue-100 py-16 relative overflow-hidden">
-        {/* Background Elements */}
-        <Image
-          src={bird1}
-          alt="Amani Kids Logo"
-          width={80}
-          height={80}
-          loading="lazy"
-          className="absolute top-4 left-4 hidden sm:block"
-        />
-        <Image
-          src={bird2}
-          alt="Amani Kids Logo"
-          width={200}
-          height={70}
-          loading="lazy"
-          className="absolute top-5 right-10 hidden sm:block"
-        />
-        <Image
-          src={cloud}
-          alt="Amani Kids Logo"
-          width={200}
-          height={100}
-          loading="lazy"
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 opacity-70 hidden sm:block"
-        />
-        <Image
-          src={tree}
-          alt="Amani Kids Logo"
-          width={120}
-          height={150}
-          loading="lazy"
-          className="absolute bottom-0 left-4 hidden sm:block"
-        />
-
-        <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
+      <section
+        id="hero"
+        className="bg-blue-100 py-30 px-20 relative overflow-hidden"
+      >
+        <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center justify-center gap-8">
           {/* Text Content */}
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -114,13 +79,8 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
               <Link href="/contact">
-                <button className="cursor-pointer bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500 text-white px-7 py-2.5 rounded-full font-bold shadow-xl hover:scale-105 duration-300 transition-transform">
+                <button className="ml-100 cursor-pointer bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500 text-white px-7 py-2.5 rounded-full font-bold shadow-xl hover:scale-105 duration-300 transition-transform">
                   اتصل بنا
-                </button>
-              </Link>
-              <Link href="/donate">
-                <button className="cursor-pointer bg-gradient-to-r from-pink-400 to-red-400 hover:from-pink-500 hover:to-red-500 text-white px-7 py-2.5 rounded-full font-bold shadow-xl hover:scale-105 duration-300 transition-transform">
-                  تبرع
                 </button>
               </Link>
             </div>
@@ -128,8 +88,8 @@ const Home = () => {
 
           {/* Video/Image Preview */}
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             className="w-full lg:w-1/2 flex justify-center"
           >
@@ -145,7 +105,7 @@ const Home = () => {
         </div>
       </section>
       {/* features SECTION */}
-      <section id="features" className="bg-white py-20 px-6">
+      <section id="features" className="bg-white mt-20 py-20 px-6">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-yellow-700 mb-4">
             الميزات التي نقدمها
@@ -154,14 +114,14 @@ const Home = () => {
             استكشف بعض الميزات الرائعة، وللمزيد انتقل إلى صفحة الميزات الكاملة.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Feature Card 1 */}
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="cursor-pointer bg-yellow-50 rounded-xl shadow-md p-6 text-center hover:bg-yellow-100 transition-all duration-100 hover:scale-105 duration-300"
+            className="cursor-pointer bg-white border border-blue-100 rounded-xl shadow-md p-6 text-center hover:bg-blue-100 transition-all duration-100 hover:scale-105 duration-300"
           >
             <Image
               src={feature1}
@@ -178,7 +138,7 @@ const Home = () => {
               حدد وقت استخدام الشاشة، تتبع ما يشاهده طفلك، اختر محتوى آمنًا.
             </p>
             <Link
-              href="/features"
+              href="/parents"
               className="text-blue-500 hover:text-blue-700 tranition-all"
             >
               المزيد
@@ -191,7 +151,7 @@ const Home = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="cursor-pointer bg-yellow-50 rounded-xl shadow-md p-6 text-center hover:bg-yellow-100 transition-all duration-100 hover:scale-105 duration-300"
+            className="cursor-pointer bg-white border border-blue-100 rounded-xl shadow-md p-6 text-center hover:bg-blue-100 transition-all duration-100 hover:scale-105 duration-300"
           >
             <Image
               src={feature2}
@@ -222,7 +182,7 @@ const Home = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="cursor-pointer bg-yellow-50 rounded-xl shadow-md p-6 text-center hover:bg-yellow-100 transition-all duration-100 hover:scale-105 duration-300 "
+            className="cursor-pointer bg-white border border-blue-100 rounded-xl shadow-md p-6 text-center hover:bg-blue-100 transition-all duration-100 hover:scale-105 duration-300 "
           >
             <Image
               src={feature3}
@@ -251,13 +211,13 @@ const Home = () => {
       {/* about SECTION */}
       <motion.section
         id="about"
-        className="bg-yellow-50 py-20 px-6"
+        className="bg-white py-20 px-6"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+        <div className=" max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Left - Text */}
           <div className="w-full lg:w-1/2 text-right">
             <h2 className="text-3xl sm:text-4xl font-bold text-yellow-700 mb-8">
@@ -317,7 +277,7 @@ const Home = () => {
         </div>
       </motion.section>
       {/* VIDEO STATS LOOP SECTION */}
-      <section className="relative bg-white py-12 overflow-hidden">
+      <section className="relative bg-white  py-12 pb-20 overflow-hidden">
         <Slider {...settings}>
           {sliderItems.map((item, index) => (
             <div key={index} className="px-2">
@@ -346,7 +306,7 @@ const Home = () => {
         </Slider>
       </section>
       {/* why us*/}
-      <section id="whyus" className="bg-blue-50 py-20 px-6">
+      <section id="whyus" className="bg-white mt-20 py-20 px-6">
         <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
           {/* Text Content */}
           <motion.div
@@ -354,12 +314,12 @@ const Home = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="w-full lg:w-1/2 text-right"
+            className="w-full lg:w-1/2 text-right pr-20"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-yellow-700 mb-4">
               لماذا أماني تون؟
             </h2>
-            <h3 className="text-xl sm:text-2xl text-rose-600 font-semibold mb-2">
+            <h3 className="text-xl sm:text-2xl text-black font-semibold mb-2">
               لأن طفلك يستحق أكثر من مجرد وقت للشاشة.
             </h3>
             <p className="text-gray-700 mb-6 text-base sm:text-lg">
@@ -368,36 +328,63 @@ const Home = () => {
             </p>
 
             <ul className="space-y-3 text-gray-800 font-medium text-base sm:text-lg">
-              <li className="flex items-center gap-2">
+              <motion.li
+                className="flex items-center gap-2"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
                 <CheckCircle className="text-green-500 w-5 h-5" />
                 يُنمي القيم والمهارات
-              </li>
-              <li className="flex items-center gap-2">
+              </motion.li>
+
+              <motion.li
+                className="flex items-center gap-2"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
                 <CheckCircle className="text-green-500 w-5 h-5" />
                 متعدد اللغات ومتوافق مع الثقافات
-              </li>
-              <li className="flex items-center gap-2">
+              </motion.li>
+
+              <motion.li
+                className="flex items-center gap-2"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.4, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
                 <CheckCircle className="text-green-500 w-5 h-5" />
                 مصمم للآباء أيضًا
-              </li>
-              <li className="flex items-center gap-2">
+              </motion.li>
+
+              <motion.li
+                className="flex items-center gap-2"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.8, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
                 <CheckCircle className="text-green-500 w-5 h-5" />
                 آمن ومناسب للأطفال
-              </li>
+              </motion.li>
             </ul>
           </motion.div>
 
           {/* Image */}
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="w-full lg:w-1/2 flex justify-center"
           >
             <Image
-              src={kidsStudying}
-              alt="أطفال يدرسون"
+              src={kids_hapy}
+              alt="أطفال يستمتعون بتطبيق أماني تون"
               width={500}
               height={350}
               loading="lazy"
@@ -409,7 +396,7 @@ const Home = () => {
       {/*review*/}
       <ReviewSection />
       {/*banner*/}
-      <section className="bg-gradient-to-r from-pink-400 to-red-400 text-white py-12 px-6">
+      <section className="mt-20 bg-gradient-to-r from-pink-400 to-red-400 text-white py-12 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             انضم إلى مجتمعنا اليوم!
