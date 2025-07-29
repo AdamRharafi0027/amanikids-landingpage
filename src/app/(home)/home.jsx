@@ -169,7 +169,7 @@ const Home = () => {
               ألعاب وألغاز مطابقة.
             </p>
             <Link
-              href="/features"
+              href="/taskActivity"
               className="text-blue-500 hover:text-blue-700 tranition-all"
             >
               المزيد
@@ -200,7 +200,7 @@ const Home = () => {
               رسوماتك الخاصة.
             </p>
             <Link
-              href="/features"
+              href="/drawing"
               className="text-blue-500 hover:text-blue-700 tranition-all"
             >
               المزيد

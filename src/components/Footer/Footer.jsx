@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-        <div className="bg-yellow-50 py-10 px-10 max-w-7xl -mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="bg-yellow-50 py-10 px-10 max-w-full -mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {/* Logo & About */}
           <div className="flex flex-col items-start gap-3">
             <Image
@@ -28,11 +28,6 @@ const Footer = () => {
               <li>
                 <Link href="/" className="hover:text-rose-600">
                   الصفحة الرئيسية
-                </Link>
-              </li>
-              <li>
-                <Link href="/features" className="hover:text-rose-600">
-                  الميزات
                 </Link>
               </li>
               <li>
@@ -77,19 +72,7 @@ const Footer = () => {
             <p className="text-sm mb-4">
               اشترك في النشرة البريدية للحصول على محتوى جديد وتعليمي لطفلك.
             </p>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="بريدك الإلكتروني"
-                className="px-3 py-2 rounded-full text-sm focus:outline-none border border-gray-300 w-full"
-              />
-              <button
-                type="submit"
-                className="bg-pink-400 hover:bg-pink-500 text-white px-4 py-2 rounded-full text-sm"
-              >
-                اشترك
-              </button>
-            </form>
+            
           </div>
         {/* Copyright */}
         <div className="text-center mt-5 text-sm text-gray-600">

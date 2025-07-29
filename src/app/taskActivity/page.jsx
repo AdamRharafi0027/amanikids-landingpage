@@ -1,9 +1,9 @@
-import Features from './Features'
+import TaskActivity from "./TaskActivity"
 
 const page = () => {
   return (
     <>
-        <Features />
+        <TaskActivity />
     </>
   )
 }
