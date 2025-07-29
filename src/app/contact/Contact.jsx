@@ -12,7 +12,7 @@ export default function ContactUs() {
 
         <div className="bg-white p-6 sm:p-10 rounded-xl shadow-lg text-right">
           <h2 className="text-2xl font-bold text-blue-800 mb-6">📬 معلومات التواصل</h2>
-          <p className="text-gray-700 mb-2">📧 البريد الإلكتروني: <span className="font-medium">contact@toonkids.com</span></p>
+          <p className="text-gray-700 mb-2">📧 البريد الإلكتروني: <span className="font-medium">amanikidsbusiness@gmail.com</span></p>
           <p className="text-gray-700 mb-2">📱 الهاتف: <span className="font-medium">+212 6 12 34 56 78</span></p>
           <p className="text-gray-700 mb-6">📍 العنوان: الدار البيضاء، المغرب</p>
 

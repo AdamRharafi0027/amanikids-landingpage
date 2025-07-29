@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BackToTopButton from "../components/BackToTopButton/BackToTopButton.jsx";
 import Footer from "../components/Footer/Footer.jsx";
+import ExitPopup from "@/components/ExitPopup/ExitPopup.jsx";
 // import favicon from "../../public/assets/images/favicon.ico"
 
 export const metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <BackToTopButton />
+        <ExitPopup />
         <Footer/>
       </body>
     </html>

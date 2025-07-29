@@ -88,20 +88,23 @@ const Home = () => {
 
           {/* Video/Image Preview */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="w-full lg:w-1/2 flex justify-center"
-          >
-            <Image
-              src={videoPreview}
-              alt="Amani Kids Video Preview"
-              width={480}
-              height={320}
-              loading="lazy"
-              className="rounded-xl shadow-xl border-4 border-white w-full max-w-md"
-            />
-          </motion.div>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+  className="w-full lg:w-1/2 flex justify-center"
+>
+  <div className="relative w-full max-w-4xl h-[400px] rounded-xl overflow-hidden shadow-xl border-4 border-white">
+    <iframe
+      src="https://www.youtube.com/embed/3M-ztiRtm6Q?si=0Hn2zXksLxg-AU65"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+      className="absolute top-0 left-0 w-full h-full object-cover"
+    ></iframe>
+  </div>
+</motion.div>
+
         </div>
       </section>
       {/* features SECTION */}
